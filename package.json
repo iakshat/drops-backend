@@ -1,0 +1,20 @@
+{
+  "name": "bloodbank-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iakshat",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "js-binary": "^1.2.0",
+    "mongodb": "^3.5.7"
+  }
+}
