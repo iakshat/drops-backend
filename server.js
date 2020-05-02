@@ -227,7 +227,7 @@ app.get("/notifications", (req, res) => {
         var user = getUsersFromDB().find(u => {return u.username === d.username});
         // console.log("notif user ",user)
         var requests = getRequestsFromDB().filter(req => {
-            return (distanceLatLng(user.geometry, req.geometry) < 40 && req.bloodGroup === user.bloodGroup)
+            return (distanceLatLng(user.geometry, req.geometry) < 40 && req.bloodGroup === user.bloodGroup && req.status === "active")
         });
         if(!requests)
             requests = [];
